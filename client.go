@@ -41,15 +41,19 @@ type Client struct {
 
 // Declare used to declare queues/exchanges/bindings.
 // Declaration is saved and will be re-run every time Client gets connection
-func (c *Client) Declare(d []Declaration) {
+func (c *Client) Declare(d []Declaration) []error {
 	c.l.Lock()
 	defer c.l.Unlock()
 	c.declarations = append(c.declarations, d...)
+
+	errs := make([]error, 0, len(d))
 	if ch, err := c.channel(); err == nil {
 		for _, declare := range d {
-			declare(ch)
+			err := declare(ch)
+			errs = append(errs, err)
 		}
 	}
+	return errs
 }
 
 // Consume used to declare consumers

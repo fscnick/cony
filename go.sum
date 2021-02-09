@@ -1,2 +1,6 @@
+github.com/assembla/cony v0.3.2 h1:C4xSKx+jrXAdLOVN9Eb6gR1c2oef5J5wZKTpSWA8C6A=
+github.com/assembla/cony v0.3.2/go.mod h1:tc5T6tc0un/CDPqiSpLkTS2oUuiO34ab85YCKzSpkDw=
+github.com/rueian/cony v0.3.2 h1:quPZK8Py8u0FO4WEsDBSe8fOijl9cNem9siA2/cI7X8=
+github.com/rueian/cony v0.3.2/go.mod h1:hU9R7GUneKqjm3h1tERvkypBmJTC9IPY/IoiEXlQWPs=
 github.com/streadway/amqp v0.0.0-20180806233856-70e15c650864 h1:Oj3PUEs+OUSYUpn35O+BE/ivHGirKixA3+vqA0Atu9A=
 github.com/streadway/amqp v0.0.0-20180806233856-70e15c650864/go.mod h1:1WNBiOZtZQLpVAyu0iTduoJL9hEsMloAK5XWrtW0xdY=
